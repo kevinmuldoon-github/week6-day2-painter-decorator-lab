@@ -13,5 +13,16 @@ describe ('Paint' , function() {
         assert.strictEqual(actual, 5);
     });
 
+    it('can check if paint is empty' , function() {
+        const actual = paint.is_empty;
+        assert.strictEqual(actual, false);
+    });
+
+    it('be able to empty paint can' , function() {
+        paint.empty_can();
+        const actual = paint.is_empty;
+        assert.strictEqual(actual, true);
+    }); 
+
 
 });

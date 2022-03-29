@@ -4,6 +4,9 @@ const Paint = function (litres) {
 
 };
 
+Paint.prototype.empty_can = function () {
+    this.is_empty = true;
+};
 
 
 module.exports = Paint;
