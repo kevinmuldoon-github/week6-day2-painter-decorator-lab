@@ -6,6 +6,10 @@ const Room = require('../room.js');
 describe ('Decorator' , function() {
 
     let decorator;
+    let room;
+    let paint1;
+    let paint2;
+    let paint3;
 
     beforeEach(function() {
         decorator = new Decorator();
